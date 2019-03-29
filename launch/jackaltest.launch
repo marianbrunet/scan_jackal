@@ -1,0 +1,10 @@
+<launch>
+ 
+
+  <rosparam command="load" file="$(find scan_jackal)/src/configjackaltest.yaml" />
+
+  <node pkg="scan_jackal" type="scanjackalv2.py" name="scan_jackal"/>
+
+  <node pkg="scan_jackal" type="velocityjackalv2.py" name="velocity_jackal"/>
+  
+</launch>
